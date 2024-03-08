@@ -1,0 +1,18 @@
+def indexOfSmallestElement(lst : list) :
+    
+    smallest = lst[0]
+    smallest_idx = 0
+    for i in lst :
+        if smallest > i :
+            smallest_idx = lst.index(i)
+            smallest = i
+        else :
+            continue
+    return smallest_idx
+        
+def main() :
+    nums = [int(x) for x in input("정수 리스트 입력 : ").split()]
+    print("가장 작은 인덱스 : ", indexOfSmallestElement(nums))
+    
+if __name__ == "__main__" :
+    main()

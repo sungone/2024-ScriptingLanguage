@@ -1,0 +1,19 @@
+def isSorted(lst : list) :
+    new_lst = lst[:]
+    new_lst.sort()
+
+    if(new_lst == lst) :
+        return True
+    else :
+        return False
+
+def main() :
+    nums = [int(x) for x in input("10개의 숫자를 입력하세요 : ").split()]
+
+    if(isSorted(nums) == True) :
+         print("리스트는 정렬되어 있습니다.")
+    else :
+        print("리스트는 정렬되어 있지 않습니다.")
+        
+if __name__ == "__main__" :
+    main()

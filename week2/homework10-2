@@ -1,0 +1,15 @@
+def main() :
+    num = input("정수를 입력 : ")
+    reverse_num = ''
+    for i in num :
+        reverse_num = i + reverse_num
+
+    print(int(reverse_num))
+
+if __name__ == "__main__" :
+    main()
+
+
+
+
+

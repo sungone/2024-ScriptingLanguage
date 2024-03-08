@@ -1,0 +1,23 @@
+def main() :
+    num_list = [int(x) for x in input("1 과 100 사이의 정수를 입력하세요 : ").split()]
+    
+    num_dict = {}
+    for i in num_list :
+
+        if num_dict.get(i) :
+            num_dict[i] += 1
+        else :
+            num_dict.update({i : 1})
+
+    num_list.sort()
+    new_list = []
+
+    for i in num_list :
+        if i not in new_list :
+            new_list.append(i)
+
+    for i in new_list :
+        print(i , "-" , num_dict[i] , "번 나타납니다.")
+
+if __name__ == "__main__" :
+    main()

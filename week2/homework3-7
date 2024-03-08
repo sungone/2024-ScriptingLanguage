@@ -1,0 +1,11 @@
+import time
+
+def main() :
+    random = time.time()
+    num = 65 + (random % 26)
+    ## 65 ~ 90
+
+    print(chr(int(num)))
+
+if __name__ == "__main__" :
+    main()

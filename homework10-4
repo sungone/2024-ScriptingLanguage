@@ -1,0 +1,30 @@
+def main() :
+    nums = [int(x) for x in input("정수 입력 : ").split()]
+
+    total = 0
+    for i in nums :
+        total += i
+
+    average = total / len(nums)
+
+    aver_up = []
+    aver_equal = []
+    aver_down = []
+
+    for i in nums :
+        if i == average :
+            aver_equal.append(i)
+
+        elif i > average :
+            aver_up.append(i)
+
+        else :
+            aver_down.append(i)
+
+    print("평균 이상 : " , aver_up)
+    print("평균 : " , aver_equal)
+    print("평균 이하 : " , aver_down)
+    
+
+if __name__ == "__main__" :
+    main()

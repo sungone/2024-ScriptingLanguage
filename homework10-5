@@ -1,0 +1,15 @@
+def main() :
+    nums = [int(x) for x in input("10개의 숫자를 입력하세요 : ").split()]
+
+    new_list = []
+
+    for i in nums :
+        if i not in new_list :
+            new_list.append(i)
+        else :
+            continue
+
+    print("중복을 제거한 고유한 숫자 : " , new_list)
+
+if __name__ == "__main__" :
+    main()
